@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulários</title>
+    <title>Formulário</title>
 </head>
 
 <body>
-    <h1>Formulário de cadastro</h1><hr>
+    <h1>Formulário de cadastro</h1> 
+
     <form action="">
-        <label for="text">Nome:</label>
-        <input id="Cadrasto" type="text" placeholder="Digite seu nome aqui"/>
-        </form><br>
+
+        <!--LEGENDA PARA NOME-->
+        <label for="Nome">Nome:</label>
+        <!--CAMPO DO TIPO TYPE TEXTO-->
+        <input id="Nome" type="text" placeholder="Digite seu nome" required>
+
+        <br><br>    
         
-        <!--CAMPO DO INPUY DO TEXT-->
-        <label for="email">Email :
-             </label>
+        <!--LEGENDA PARA E-MAIL-->
+        <label for="email">Email:</label>
+        <!--CAMPO INPUT DO TYPE EMAIL-->
         <input id="email" type="email" placeholder="Digite seu e-mail" required>
+
         <br><br>
-        <!--LEGENDA PARA SENHA     -->
+
+        <!--LEGENDA PARA SENHA-->
         <label for="Senha">Senha:</label>
+        <!--CAMPO INPUT DO TYPE PASSWORD-->
         <input id="Senha" type="password" placeholder="Digite sua senha" required>
-    </form>  
-    <br>
-    <hr><br>
-    <button>
-    <input TYPE="submit" value="Cadastrar"></<input>
     
+        <br><br>
+        <hr><br>
+
+        <!--CAMPO TIPO SUBMIT-->
+        <input type="submit" value="cadastrar">
+
+    </form>       
 </body>
 </html>
