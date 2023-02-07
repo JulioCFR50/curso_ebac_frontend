@@ -1,7 +1,8 @@
 *{
     box-sizing: border-box;
-    margin: 100;
-    padding: 100;
+    margin: 0;
+    padding: 0;
+   
 }
 
 body > header {
@@ -29,7 +30,7 @@ header li a {
 }
 
 .container {
-    width: 1366px;
+    width: 1266px;
     margin: 0 auto;
 }
 
