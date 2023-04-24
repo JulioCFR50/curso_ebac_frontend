@@ -24,9 +24,6 @@ $(document).ready(function() {
            telefone: {
                required: true
            },
-           telefone: {
-            required: true
-        },
            cpf: {
                required: true,
            },
