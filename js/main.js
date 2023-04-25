@@ -1,8 +1,4 @@
 $(document).ready(function() {
-   $(`#carousel-imagens`).slick({
-         autoplay: true,
-    });
-
    $(`.menu-hamburguer`).click(function() {
         $(`nav`).slideToggle();
     })
@@ -34,9 +30,7 @@ $(document).ready(function() {
             required: false
         },
        },
-       messages: {
-           nome: 'Por favor, preencha todos os campos.'
-       },
+      
        submitHandler: function(form) {
            console.log(form)
        },
@@ -47,10 +41,5 @@ $(document).ready(function() {
            }
        }
    })
-
-     $('html').animate({
-            scrollTop: destino.offset().top
-        }, 1000)
-        
-        })
+ })
    
