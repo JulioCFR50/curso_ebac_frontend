@@ -1,0 +1,19 @@
+form input {
+    display: block;
+    width: 320px;
+    margin-bottom: 10px; 
+    cursor: pointer;   
+    outline: 0;
+    font-weight: 200px;   
+}
+
+body {
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: rgb(120, 202, 237); 
+    font-family: 'Arial', sans-serif;
+    
+}
+ h2 {
+   font-weight: 700;
+ }
