@@ -1,0 +1,19 @@
+{
+  "name": "exercicio_git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.7"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

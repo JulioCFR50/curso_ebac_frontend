@@ -1,0 +1,111 @@
+/* Block */
+.page {
+    margin: 0;
+    padding: 0;
+
+    /* Block - Layout */
+    &__body {
+        background: linear-gradient(to bottom, white, gray);
+        font-family: sans-serif;
+    }
+
+    /* Block - Produtos */
+    &__products {
+        max-width: 640px;
+        width: 100%;
+        margin: 56px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1%;
+    }
+
+    /* Block - Produto */
+    &__product {
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+
+        /* Element - Produto Imagem */
+        &__image {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        /* Modifier - Produto Hovered */
+        &:hover {
+            border: 2px solid gold;
+            background-color: #ffff42;
+
+            /* Modifier - Produto Imagem Hovered */
+            &__image {
+                transform: scale(1.0);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        /* Element - Produto Nome */
+        &__name {
+            font-size: 1.2em;
+            margin: 8px 0;
+            text-align: center;
+        }
+
+        /* Element - Produto Descrição */
+        &__description {
+            color: #f6fa05;
+            text-align: center;
+            font-weight: bold;
+            transition: color 0.3s ease;
+
+            /* Modifier - Produto Descrição Hovered */
+            &:hover {
+                color: rgb(255, 30, 0);
+            }
+        }
+    }
+
+    /* Block - Formulário de Cadastro */
+    &__form {
+        text-align: center;
+        margin-top: 10px;
+
+        /* Element - Formulário de Cadastro Label */
+        &__label {
+            display: block;
+            margin-bottom: 5px;
+            color: #f6fa05;
+            transition: color 0.3s ease;
+
+            /* Modifier - Formulário de Cadastro Label Hovered */
+            &:hover {
+                color: rgb(255, 30, 0);
+            }
+        }
+
+        /* Element - Formulário de Cadastro Input e Button */
+        &__input,
+        &__button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        /* Block - Formulário de Cadastro Button */
+        &__button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: wait;
+
+            /* Modifier - Formulário de Cadastro Button Hovered */
+            &:hover {
+                background-color: #45a049;
+                color: #f6fa05;
+            }
+        }
+    }
+}

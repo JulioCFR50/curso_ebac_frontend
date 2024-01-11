@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício boas práticas de CSS</title>
+    <link rel="stylesheet" href="bem/main.css">    
+    <!--<link rel="stylesheet" href="smacss/base.css"> 
+    <link rel="stylesheet" href="smacss/layout.css">
+    <link rel="stylesheet" href="smacss/module.css">
+    <link rel="stylesheet" href="smacss/state.css">-->
+</head>
+<body>
+    <div class="products">
+        <div class="product">
+            <img class="product__image" src="imagem/esportes.jpg" alt="Esportes">
+            <h4 class="product__name">Esportes</h4>
+            <p class="product__description">
+                Além de melhorar a aptidão física, o exercício físico regular também pode melhorar a capacidade cognitiva.
+            </p>
+            
+            <!-- Formulário de Cadastro -->
+            <form class="form form--product" onsubmit="handleFormSubmit(event, 'nome1')">
+                <label for="nome1" class="form__label"></label>
+                <input type="text" id="nome1" name="nome" class="form__input" placeholder="Digite seu nome">
+                <button type="submit" class="form__button">Cadastrar</button>
+            </form>
+        </div>
+        <div class="product product--highlighted">
+            <img class="product__image" src="imagem/decoracao.jpg" alt="Natureza">
+            <h4 class="product__name">Natureza</h4>
+            <p class="product__description">
+                A natureza fornece ao ser humano desde elementos básicos para a vida, (água, alimento, energia, ar puro) psicológicos e espirituais.
+            </p>
+            
+            <!-- Formulário de Cadastro -->
+            <form class="form form--product" onsubmit="handleFormSubmit(event, 'nome2')">
+                <label for="nome2" class="form__label"></label>
+                <input type="text" id="nome2" name="nome" class="form__input" placeholder="Digite seu nome">
+                <button type="submit" class="form__button">Cadastrar</button>
+            </form>
+        </div>
+        <div class="product">
+            <img class="product__image" src="imagem/paisagem.jpg" alt="Nome do produto">
+            <h4 class="product__name">Relaxamento</h4>
+            <p class="product__description">
+                Consiste em um conjunto de técnicas que visa garantir o bem estar do indivíduo, através do alívio de tensões físicas, mentais e emocionais.
+            </p>
+            
+            <!-- Formulário de Cadastro -->
+            <form class="form form--product" onsubmit="handleFormSubmit(event, 'nome3')">
+                <label for="nome3" class="form__label"></label>
+                <input type="text" id="nome3" name="nome" class="form__input" placeholder="Digite seu nome">
+                <button type="submit" class="form__button">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function handleFormSubmit(event, inputId) {
+            event.preventDefault(); // Impede o comportamento padrão de envio do formulário
+            alert("Formulário Cadastrado com Sucesso!"); // Exemplo: exibir um alerta
+            document.getElementById(inputId).value = ""; // Limpa o conteúdo do campo de texto
+            // Adicione a lógica de cadastro aqui, como enviar dados para o servidor, etc.
+        }
+    </script>
+</body>
+</html>
+
+
+
